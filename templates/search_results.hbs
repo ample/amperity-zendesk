@@ -1,0 +1,35 @@
+<script>
+  var templateName = "search_results";
+</script>
+
+<section class="hero hero-image">
+  <div class="hero-inner">
+  
+    {{!-- Welcome Hero --}}
+    <h1 class="welcome-message-title welcome-message">
+      Welcome to the <span><br/></span>Amperity Help Center
+    </h1>
+
+    <script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','bWjxZne8RNBBMvTkpcrK','2.0.0');
+</script>
+    
+    {{!-- Search Container (Hooked Up to Results Page with Swifttype) --}}
+    <div class="search-container">
+      {{search instant=true class='search search-full'}}</div>
+    
+    <span id="search_placeholder_template"
+      data-value="{{#is settings.search_placeholder_text_dc 'NONE'}}{{settings.search_placeholder_text}}{{else}}{{dc settings.search_placeholder_text_dc}}{{/is}}"
+      style="display:none"></span>
+   
+  </div>
+</section>
+
+<div class="container section">
+  <div id="st-results-container"></div>
+</div>

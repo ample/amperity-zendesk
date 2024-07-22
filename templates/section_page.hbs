@@ -1,0 +1,83 @@
+<script>
+  var templateName = 'sections';
+</script>
+
+<div class="container-divider"></div>
+<div class="container section">
+  <nav class="sub-nav">
+    {{breadcrumbs}} <div class="sub-nav-search-container">
+      {{search submit=true instant=true}}
+    </div>
+
+  </nav>
+  <div id="main-content" class="section-container">
+    {{#if settings.catgsec_sidebar_visibility}}
+    <div class="category-sidebar-wrapper sidebar " aria-labelledby="sidebar-menu-title">
+      <div class="collapsible-sidebar">
+        <button type="button" class="collapsible-nav-toggle" aria-labelledby="sidebar-menu-title" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12"
+            aria-hidden="true" class="collapsible-nav-toggle-icon chevron-icon">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12"
+            aria-hidden="true" class="collapsible-nav-toggle-icon x-icon">
+            <path stroke="currentColor" stroke-linecap="round" d="M3 9l6-6m0 6L3 3"></path>
+          </svg>
+        </button>
+        <h3 class="collapsible-sidebar-title sidenav-title menu-title">
+          {{#is settings.sidebar_title_dc 'NONE'}}{{settings.sidebar_title}}{{else}}{{dc
+          settings.sidebar_title_dc}}{{/is}}
+        </h3>
+        <div class="collapsible-sidebar-body">
+          <div class="diziana-category-sidebar-menu category-sidebar-menu"></div>
+        </div>
+      </div>
+    </div>
+    {{/if}}
+
+    <section class="section-content">
+      <header class="page-header section-page-header">
+        <h1>
+          {{section.name}}
+        </h1>
+        {{#if settings.show_follow_section}} {{subscribe}} {{/if}}
+
+        <p class="page-header-description">{{section.description}}</p>
+      </header>
+      {{#if section.sections}}
+      <ul
+        class="section-list section-list--collapsed {{#if settings.content_layout_columns}}single-column-layout{{/if}}">
+        {{#each section.sections}}
+        <li class="section-list-item">
+          <i class="fas fa-folder"></i>
+          <a href="{{url}}">
+            <span>{{name}}</span>
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+      {{/if}}
+      {{pagination "section.sections"}}
+      {{#if section.articles}}
+      <ul class="article-list  {{#if settings.content_layout_columns}}single-column-layout{{/if}}">
+        {{#each section.articles}}
+        <li class="article-list-item {{#if promoted}} article-promoted{{/if}}">
+          {{#if promoted}}
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 12 12"
+            class="icon-star" title="{{t 'promoted'}}">
+            <path fill="currentColor"
+              d="M2.88 11.73c-.19 0-.39-.06-.55-.18a.938.938 0 01-.37-1.01l.8-3L.35 5.57a.938.938 0 01-.3-1.03c.12-.37.45-.63.85-.65L4 3.73 5.12.83c.14-.37.49-.61.88-.61s.74.24.88.6L8 3.73l3.11.17a.946.946 0 01.55 1.68L9.24 7.53l.8 3a.95.95 0 01-1.43 1.04L6 9.88l-2.61 1.69c-.16.1-.34.16-.51.16z" />
+          </svg>
+          {{/if}}
+          <a href="{{url}}" class="article-list-link" title="{{title}}">{{title}}</a>
+        </li>
+        {{/each}}
+      </ul>
+      {{else}}
+
+      <a href="{{section.url}}" title="{{t 'empty'}}"> <i class="section-empty"> {{t 'empty'}}</i></a>
+
+      {{/if}} {{pagination "section.articles"}}
+    </section>
+  </div>
+</div>

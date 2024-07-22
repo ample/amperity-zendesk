@@ -1,0 +1,75 @@
+<script>
+  var categoryId = {{ category.id }};
+  var templateName = 'category';
+</script>
+
+<div class="container-divider"></div>
+<div class="container">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+  </nav>
+
+  <div class="category-container">
+
+    <div class="category-content">
+      <header class="page-header category-page-header">
+        <h1>{{category.name}}</h1>
+        {{#if category.description}}
+        <p class="page-header-description">{{category.description}}</p>
+        {{/if}}
+      </header>
+      <div class="section-tree {{#if settings.content_layout_columns}}single-column-layout{{/if}}">
+        {{#each sections}}
+        <section class="section">
+          <h2 class="section-tree-title">
+            <a href="{{url}}" title="{{name}}">{{name}}</a>
+          </h2>
+
+          {{#if sections}}
+          <ul
+            class="section-list section-list--collapsed {{#if ../settings.content_layout_columns}}single-column-layout{{/if}}">
+            {{#each sections}}
+            <li class="section-list-item">
+              <i class="fas fa-folder"></i>
+              <a href="{{url}}">
+                <span>{{name}}</span>
+              </a>
+            </li>
+            {{/each}}
+          </ul>
+          {{/if}}
+
+          {{#if articles}}
+          <ul class="article-list {{#if ../settings.content_layout_columns}}single-column-layout{{/if}}">
+            {{#each articles}}
+            <li class="article-list-item{{#if promoted}} article-promoted{{/if}}">
+              {{#if promoted}}
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12"
+                class="icon-star" title="{{t 'promoted'}}">
+                <path fill="currentColor"
+                  d="M2.88 11.73c-.19 0-.39-.06-.55-.18a.938.938 0 01-.37-1.01l.8-3L.35 5.57a.938.938 0 01-.3-1.03c.12-.37.45-.63.85-.65L4 3.73 5.12.83c.14-.37.49-.61.88-.61s.74.24.88.6L8 3.73l3.11.17a.946.946 0 01.55 1.68L9.24 7.53l.8 3a.95.95 0 01-1.43 1.04L6 9.88l-2.61 1.69c-.16.1-.34.16-.51.16z" />
+              </svg>
+              {{/if}}
+              <a href="{{url}}" class="article-list-link" title="{{title}}">{{title}}</a>
+            </li>
+            {{/each}}
+          </ul>
+          {{#if more_articles}}
+          <a href="{{url}}" class="see-all-articles" title="{{t 'show_all_articles' count=article_count}}">
+            {{t 'show_all_articles' count=article_count}}
+          </a>
+          {{/if}} {{else}}
+
+          <a href="{{url}}" title="{{t'empty'}}"><i class="section-empty"> {{t 'empty'}}</i></a>
+
+          {{/if}}
+        </section>
+        {{else}}
+
+        <a href="{{category.url}}" title="{{t 'empty'}}"> <i class="category-empty">{{t 'empty'}}</i></a>
+
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

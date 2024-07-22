@@ -1,0 +1,1671 @@
+{
+  "name": "Sagma (Copy)",
+  "author": "Diziana (Allies Interactive Services Pvt. Ltd)",
+  "version": "3.4.22",
+  "api_version": 3,
+  "default_locale": "en-us",
+  "settings": [
+    {
+      "label": "colors_group_label",
+      "variables": [
+        {
+          "identifier": "brand_color",
+          "type": "color",
+          "description": "brand_color_description",
+          "label": "brand_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "brand_text_color",
+          "type": "color",
+          "description": "brand_text_color_description",
+          "label": "brand_text_color_label",
+          "value": "#FFFFFF"
+        },
+        {
+          "identifier": "text_color",
+          "type": "color",
+          "description": "text_color_description",
+          "label": "text_color_label",
+          "value": "#333333"
+        },
+        {
+          "identifier": "link_color",
+          "type": "color",
+          "description": "link_color_description",
+          "label": "link_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "visited_link_color",
+          "type": "color",
+          "description": "visited_link_color_description",
+          "label": "visited_link_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "background_color",
+          "type": "color",
+          "description": "background_color_description",
+          "label": "background_color_label",
+          "value": "#FFFFFF"
+        },
+        {
+          "identifier": "theme_border_color",
+          "type": "color",
+          "description": "theme_border_color_description",
+          "label": "theme_border_color_label",
+          "value": "rgba(221, 221, 221, 1)"
+        }
+      ]
+    },
+    {
+      "label": "avatar_colors",
+      "variables": [
+        {
+          "identifier": "avatar_bg_color",
+          "type": "color",
+          "description": "avatar_bg_color_description",
+          "label": "avatar_bg_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "agent_icon_color",
+          "type": "color",
+          "description": "agent_color_description",
+          "label": "agent_color_label",
+          "value": "#fff"
+        }
+      ]
+    },
+    {
+      "label": "header_group_label",
+      "variables": [
+        {
+          "identifier": "minimal_header",
+          "type": "checkbox",
+          "description": "minimal_header_description",
+          "label": "minimal_header_label",
+          "value": true
+        },
+        {
+          "identifier": "header_background_color",
+          "type": "color",
+          "description": "header_background_color_description",
+          "label": "header_background_color_label",
+          "value": "#000000"
+        },
+        {
+          "identifier": "header_text_color",
+          "type": "color",
+          "description": "header_text_color_description",
+          "label": "header_text_color_label",
+          "value": "#FFFFFF"
+        },
+        {
+          "identifier": "header_community_text",
+          "type": "text",
+          "description": "header_com_text_desc",
+          "label": "header_com_text_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "header_community_text_dc",
+          "type": "text",
+          "description": "header_community_text_desc_dc",
+          "label": "header_com_text_label_dc",
+          "value": "NONE"
+        },
+        {
+          "identifier": "submit_req_text",
+          "type": "text",
+          "description": "header_submit_req_text_desc",
+          "label": "header_submit_req_text_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "submit_req_text_dc",
+          "type": "text",
+          "description": "submit_req_text_text_desc_dc",
+          "label": "submit_req_text_label_dc",
+          "value": "NONE"
+        },
+        {
+          "identifier": "sign_in_button_visibility",
+          "type": "checkbox",
+          "description": "sign_in_button_visibility_description",
+          "label": "sign_in_button_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "header_links_html_dc",
+          "type": "text",
+          "description": "header_link_dc_description",
+          "label": "header_link_dc_label",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "fonts_group_label",
+      "variables": [
+        {
+          "identifier": "heading_font",
+          "type": "list",
+          "description": "heading_font_description",
+          "label": "heading_font_label",
+          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+          "options": [
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Arial Black",
+              "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Baskerville",
+              "value": "Baskerville, 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Century Gothic",
+              "value": "'Century Gothic', sans-serif"
+            },
+            {
+              "label": "Copperplate Light",
+              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+            },
+            {
+              "label": "Courier New",
+              "value": "'Courier New', Courier, monospace"
+            },
+            {
+              "label": "Futura",
+              "value": "Futura, 'Century Gothic', sans-serif"
+            },
+            {
+              "label": "Garamond",
+              "value": "Garamond, 'Hoefler Text', Times New Roman, Times, serif"
+            },
+            {
+              "label": "Geneva",
+              "value": "Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Helvetica Neue",
+              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
+            },
+            {
+              "label": "Impact",
+              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+            },
+            {
+              "label": "Lucida Grande",
+              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+            },
+            {
+              "label": "Trebuchet MS",
+              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            }
+          ]
+        },
+        {
+          "identifier": "text_font",
+          "type": "list",
+          "description": "text_font_description",
+          "label": "text_font_label",
+          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+          "options": [
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Arial Black",
+              "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Baskerville",
+              "value": "Baskerville, 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Century Gothic",
+              "value": "'Century Gothic',  sans-serif"
+            },
+            {
+              "label": "Copperplate Light",
+              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+            },
+            {
+              "label": "Courier New",
+              "value": "'Courier New', Courier, monospace"
+            },
+            {
+              "label": "Futura",
+              "value": "Futura, 'Century Gothic',   sans-serif"
+            },
+            {
+              "label": "Garamond",
+              "value": "Garamond, 'Hoefler Text', Times New Roman, Times, serif"
+            },
+            {
+              "label": "Geneva",
+              "value": "Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Helvetica Neue",
+              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
+            },
+            {
+              "label": "Impact",
+              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+            },
+            {
+              "label": "Lucida Grande",
+              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+            },
+            {
+              "label": "Trebuchet MS",
+              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "brand_group_label",
+      "variables": [
+        {
+          "identifier": "logo",
+          "type": "file",
+          "description": "logo_description",
+          "label": "logo_label"
+        },
+        {
+          "identifier": "logo_link_visibility",
+          "type": "checkbox",
+          "description": "logo_link_visibility_desc",
+          "label": "logo_link_visibility_label",
+          "value": false
+        },
+        {
+          "identifier": "logo_link",
+          "type": "text",
+          "description": "logo_link_description",
+          "label": "logo_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "favicon",
+          "type": "file",
+          "description": "favicon_description",
+          "label": "favicon_label"
+        }
+      ]
+    },
+    {"label": "cards_group_label_one",
+    "variables": [{
+      "identifier": "bg_support_guide_desktop",
+      "type": "file",
+      "description": "bg_support_guide_description",
+      "label": "bg_support_guide_desktop_label"
+    },
+    {
+      "identifier": "bg_support_guide_mobile",
+      "type": "file",
+      "description": "bg_support_guide_mobile_description",
+      "label": "bg_support_guide_mobile_label"
+    },{
+      "identifier": "bg_best_practices_desktop",
+      "type": "file",
+      "description": "bg_best_practices_description",
+      "label": "bg_best_practices_desktop_label"
+    },
+    {
+      "identifier": "bg_best_practices_mobile",
+      "type": "file",
+      "description": "bg_best_practices_mobile_description",
+      "label": "bg_best_practices_mobile_label"
+    }]
+  },
+    {
+      "label": "cards_group_label",
+      "variables": [
+        {
+          "identifier": "bg_help_center_desktop",
+          "type": "file",
+          "description": "bg_help_center_desktop_description",
+          "label": "bg_help_center_desktop_label"
+        },
+        {
+          "identifier": "bg_help_center_mobile",
+          "type": "file",
+          "description": "bg_help_center_mobile_description",
+          "label": "bg_help_center_mobile_label"
+        },
+        {
+          "identifier": "bg_learning_lab_desktop",
+          "type": "file",
+          "description": "bg_learning_lab_desktop_description",
+          "label": "bg_learning_lab_desktop_label"
+        },
+        {
+          "identifier": "bg_learning_lab_mobile",
+          "type": "file",
+          "description": "bg_learning_lab_mobile_description",
+          "label": "bg_learning_lab_mobile_label"
+        }
+      ]
+    },
+    {
+      "label": "images_group_label",
+      "variables": [
+        {
+          "identifier": "bg_homepage_desktop",
+          "type": "file",
+          "description": "homepage_background_image_description",
+          "label": "homepage_background_image_label"
+        },
+        {
+          "identifier": "bg_homepage_mobile",
+          "type": "file",
+          "description": "homepage_background_image_description",
+          "label": "homepage_background_image_label"
+        },
+        {
+          "identifier": "error_image",
+          "type": "file",
+          "description": "error_image_description",
+          "label": "error_image_label"
+        }
+      ]
+    },
+    {
+      "label": "welcome_group_label",
+      "variables": [
+        {
+          "identifier": "welcome_message_title",
+          "type": "text",
+          "description": "welcome_message_description_label",
+          "label": "welcome_message_title_label",
+          "value": "Welcome to the Amperity Help Center"
+        },
+        {
+          "identifier": "welcome_message_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "welcome_message_desc_color",
+          "type": "color",
+          "description": "welcome_message_color_description",
+          "label": "welcome_message_desc_color_label",
+          "value": "#333333"
+        }
+      ]
+    },
+    {
+      "label": "placeholder_group_label",
+      "variables": [
+        {
+          "identifier": "search_button_visibility",
+          "type": "checkbox",
+          "description": "search_button_visibility_description",
+          "label": "search_button_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "search_button_bg_color",
+          "type": "color",
+          "description": "search_button_bg_color_desc",
+          "label": "search_button_bg_color_label",
+          "value": "#000000"
+        },
+        {
+          "identifier": "search_button_icon_color",
+          "type": "color",
+          "description": "search_button_icon_color_desc",
+          "label": "search_button_icon_color_label",
+          "value": "#fff"
+        },
+        {
+          "identifier": "search_background_color",
+          "type": "color",
+          "description": "search_block_bg_color_description",
+          "label": "search_block_bg_color_label",
+          "value": "#fff"
+        },
+        {
+          "identifier": "search_placeholder_text_color",
+          "type": "color",
+          "description": "search_placeholder_text_color_description",
+          "label": "search_placeholder_text_color_label",
+          "value": "#333333"
+        },
+        {
+          "identifier": "searchbar_text_color",
+          "type": "color",
+          "description": "searchbar_text_color_description",
+          "label": "searchbar_text_color_label",
+          "value": "#333333"
+        },
+        {
+          "identifier": "search_placeholder_text",
+          "type": "text",
+          "description": "search_placeholder_text_description",
+          "label": "search_placeholder_text_label",
+          "value": "Type your question here..."
+        },
+        {
+          "identifier": "search_placeholder_text_dc",
+          "type": "text",
+          "description": "search_placeholder_text_dc_description",
+          "label": "search_placeholder_text_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "innersearchbar_border_color",
+          "type": "color",
+          "description": "innersearchbar_border_color_description",
+          "label": "innersearchbar_border_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "innersearchbar_icon_color",
+          "type": "color",
+          "description": "innersearchbar_icon_color_description",
+          "label": "innersearchbar_icon_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "innersearch_placeholder_color",
+          "type": "color",
+          "description": "innersearch_placeholder_color_description",
+          "label": "innersearh_placeholder_text_color_label",
+          "value": "#333333"
+        },
+        {
+          "identifier": "innersearchbar_text_color",
+          "type": "color",
+          "description": "innersearchbar_text_color_description",
+          "label": "innersearchbar_text_color_label",
+          "value": "#333333"
+        },
+        {
+          "identifier": "inner_searchbar_bg_color",
+          "type": "color",
+          "description": "inner_searchbar_bg_color_description",
+          "label": "inner_searchbar_bg_color_label",
+          "value": "#fff"
+        }
+      ]
+    },
+    {
+      "label": "homepage_blocks_group_label",
+      "variables": [
+        {
+          "identifier": "category_block_visibility",
+          "type": "checkbox",
+          "description": "category_block_visibility_description",
+          "label": "category_block_visibility_label",
+          "value": false
+        },
+        {
+          "identifier": "custom_block_visibility",
+          "type": "checkbox",
+          "description": "custom_block_visibility_description",
+          "label": "custom_block_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "additional_custom_block_dc",
+          "type": "text",
+          "description": "additional_custom_block_dc_description",
+          "label": "additional_custom_block_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "show_knowledge_base_tree",
+          "type": "checkbox",
+          "description": "knowledge_base_visibility_description",
+          "label": "knowledge_base_visibility_label",
+          "value": false
+        }
+      ]
+    },
+    {
+      "label": "homepage_catblocks_group_label",
+      "variables": [
+        {
+          "identifier": "category_block_html_icons_dc",
+          "type": "text",
+          "description": "category_block_icons_description",
+          "label": "category_block_icons_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "category_block_description",
+          "type": "checkbox",
+          "description": "category_block_description_desc",
+          "label": "category_block_description_label",
+          "value": false
+        }
+      ]
+    },
+    {
+      "label": "homepage_kbtree_group_label",
+      "variables": [
+        {
+          "identifier": "kb_tree_in_accordion",
+          "type": "checkbox",
+          "description": "kb_tree_in_accordion_label",
+          "label": "kb_tree_in_accordion_label",
+          "value": false
+        },
+        {
+          "identifier": "knowledgebase_title",
+          "type": "text",
+          "description": "knowledgebase_description",
+          "label": "knowledgebase_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "knowledgebase_title_dc",
+          "type": "text",
+          "description": "knowledgebase_description_dc",
+          "label": "knowledgebase_label_dc",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "third_block_group_label",
+      "variables": [
+        {
+          "identifier": "third_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "third_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "third_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Knowledge Base"
+        },
+        {
+          "identifier": "third_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "third_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "fourth_block_group_label",
+      "variables": [
+        {
+          "identifier": "fourth_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "fourth_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "fourth_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "FAQ"
+        },
+        {
+          "identifier": "fourth_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "fourth_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "fifth_block_group_label",
+      "variables": [
+        {
+          "identifier": "fifth_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "fifth_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "fifth_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Community"
+        },
+        {
+          "identifier": "fifth_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "fifth_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "sixth_block_group_label",
+      "variables": [
+        {
+          "identifier": "sixth_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "sixth_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "sixth_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Training"
+        },
+        {
+          "identifier": "sixth_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "sixth_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "seventh_block_group_label",
+      "variables": [
+        {
+          "identifier": "seventh_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "seventh_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "seventh_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Forum"
+        },
+        {
+          "identifier": "seventh_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "seventh_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "eighth_block_group_label",
+      "variables": [
+        {
+          "identifier": "eighth_block_icon",
+          "type": "file",
+          "description": "block_icon_description",
+          "label": "block_icon_label"
+        },
+        {
+          "identifier": "eighth_block_font_icon",
+          "type": "text",
+          "description": "block_font_icon_description",
+          "label": "block_font_icon_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "eighth_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Contact"
+        },
+        {
+          "identifier": "eighth_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "eighth_block_url",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "homepage_article_group_label",
+      "variables": [
+        {
+          "identifier": "home_article_visibility",
+          "type": "checkbox",
+          "description": "promoted_article_visibility_description",
+          "label": "promoted_article_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "promoted_article_title_color",
+          "type": "color",
+          "description": "article_color_description",
+          "label": "article_color_label",
+          "value": "#333333"
+        },
+        {
+          "identifier": "promoted_article_links_color",
+          "type": "color",
+          "description": "article_links_color_desc",
+          "label": "article_color_links_label",
+          "value": "#333333"
+        },
+        {
+          "identifier": "see_more_links_color",
+          "type": "color",
+          "description": "see_more_links_desc",
+          "label": "see_more_links_label",
+          "value": "#24D3FD"
+        },
+        {
+          "identifier": "home_articles_title",
+          "type": "text",
+          "description": "promoted_article_description",
+          "label": "promoted_article_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "home_articles_title_dc",
+          "type": "text",
+          "description": "promoted_article_description_dc",
+          "label": "promoted_article_label_dc",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "help_forum_group_label",
+      "variables": [
+        {
+          "identifier": "forum_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Help Forum"
+        },
+        {
+          "identifier": "forum_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "forum_block_description",
+          "type": "text",
+          "description": "block_text_description",
+          "label": "block_description_label",
+          "value": "Post questions and get advice from other people using the same products as you."
+        },
+        {
+          "identifier": "forum_block_description_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_text_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "forum_block_link",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        },
+        {
+          "identifier": "forum_block_link_title",
+          "type": "text",
+          "description": "block_link_description",
+          "label": "block_link_label",
+          "value": "See More"
+        },
+        {
+          "identifier": "forum_block_link_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_link_dc_label",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "status_dashboard_group_label",
+      "variables": [
+        {
+          "identifier": "dashboard_block_title",
+          "type": "text",
+          "description": "block_title_description",
+          "label": "block_title_label",
+          "value": "Status Dashboard"
+        },
+        {
+          "identifier": "dashboard_block_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "dashboard_block_description",
+          "type": "text",
+          "description": "block_text_description",
+          "label": "block_description_label",
+          "value": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem."
+        },
+        {
+          "identifier": "dashboard_block_description_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_text_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "dashboard_block_link",
+          "type": "text",
+          "description": "block_url_description",
+          "label": "block_url_label",
+          "value": "#"
+        },
+        {
+          "identifier": "dashboard_block_link_title",
+          "type": "text",
+          "description": "block_link_description",
+          "label": "block_link_label",
+          "value": "See More"
+        },
+        {
+          "identifier": "dashboard_block_link_title_dc",
+          "type": "text",
+          "description": "block_title_dc_description",
+          "label": "block_link_dc_label",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "category_section_page_sidebar",
+      "variables": [
+        {
+          "identifier": "content_layout_columns",
+          "type": "checkbox",
+          "description": "show_single_column_description",
+          "label": "show_single_column_label",
+          "value": false
+        }
+      ]
+    },
+    {
+      "label": "author_meta_group_label",
+      "variables": [
+        {
+          "identifier": "author_meta_details_visibility",
+          "type": "checkbox",
+          "description": "author_meta_details_visibility_description",
+          "label": "author_meta_details_visibility_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "article_template_group",
+      "variables": [
+        {
+          "identifier": "comment_block_visibility",
+          "type": "checkbox",
+          "description": "comment_block_visibility_description",
+          "label": "comment_block_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "social_share_visibility",
+          "type": "checkbox",
+          "description": "social_share_visibility_description",
+          "label": "social_share_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "show_recently_viewed_articles",
+          "type": "checkbox",
+          "description": "recently_viewed_articles_description",
+          "label": "recently_viewed_articles_label",
+          "value": true
+        },
+        {
+          "identifier": "show_related_articles",
+          "type": "checkbox",
+          "description": "related_articles_description",
+          "label": "related_articles_label",
+          "value": true
+        },
+        {
+          "identifier": "article_vote_visibility",
+          "type": "checkbox",
+          "description": "article_vote_visibility_description",
+          "label": "article_vote_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "article_helpful_title",
+          "type": "text",
+          "description": "article_helpful_title_description",
+          "label": "article_helpful_title_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "article_helpful_title_dc",
+          "type": "text",
+          "description": "article_helpful_title_dc_description",
+          "label": "article_helpful_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "table_of_content",
+          "type": "checkbox",
+          "description": "table_of_content_description",
+          "label": "table_of_content_label",
+          "value": false
+        },
+        {
+          "identifier": "toc_title",
+          "type": "text",
+          "description": "toc_description",
+          "label": "toc_title_label",
+          "value": "In this article"
+        },
+        {
+          "identifier": "toc_title_dc",
+          "type": "text",
+          "description": "toc_title_dc_description",
+          "label": "toc_title_dc_label",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "community_topic_page",
+      "variables": [
+        {
+          "identifier": "topic_block_html_icons_dc",
+          "type": "text",
+          "description": "topic_block_icons_description",
+          "label": "topic_block_icons_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "turn_off_topic_block_borders",
+          "type": "list",
+          "description": "turn_off_topic_blocks_borders_description",
+          "label": "turn_off_blocks_topic_borders_label",
+          "value": "1px",
+          "options": [
+            {
+              "label": "yes",
+              "value": "0"
+            },
+            {
+              "label": "no",
+              "value": "1px"
+            }
+          ]
+        },
+        {
+          "identifier": "topic_block_bg_color",
+          "type": "color",
+          "description": "topic_block_bg_color_desc",
+          "label": "topic_block_bg_color_label",
+          "value": "#FFFFFF"
+        },
+        {
+          "identifier": "topic_block_text_color",
+          "type": "color",
+          "description": "topic_block_text_desc",
+          "label": "topic_block_text_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "topic_block_hover_color",
+          "type": "color",
+          "description": "topic_block_hover_desc",
+          "label": "topic_block_hover_bg_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "topic_block_hover_text_color",
+          "type": "color",
+          "description": "topic_block_hover_text_desc",
+          "label": "topic_block_hover_text_color_label",
+          "value": "#FFFFFF"
+        },
+        {
+          "identifier": "feature_post_title",
+          "type": "text",
+          "description": "feature_post_description",
+          "label": "feature_post_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "feature_post_title_dc",
+          "type": "text",
+          "description": "feature_post_description_dc",
+          "label": "feature_post_label_dc",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "sidebar_visibility",
+      "variables": [
+        {
+          "identifier": "show_articles_in_section",
+          "type": "checkbox",
+          "description": "articles_in_section_description",
+          "label": "articles_in_section_label",
+          "value": true
+        },
+        {
+          "identifier": "catgsec_sidebar_visibility",
+          "type": "checkbox",
+          "description": "block_visibility_description",
+          "label": "catgsec_sidebar_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "sidebar_title",
+          "type": "text",
+          "description": "sidebar_title_description",
+          "label": "sidebar_title_label",
+          "value": "Menu"
+        },
+        {
+          "identifier": "sidebar_title_dc",
+          "type": "text",
+          "description": "sidebar_title_description_dc",
+          "label": "sidebar_title_label_dc",
+          "value": "NONE"
+        },
+        {
+          "identifier": "hide_search_result_sidebar",
+          "type": "checkbox",
+          "description": "hide-search-result-sidebar_description",
+          "label": "hide-search-result-sidebar_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "table_group",
+      "variables": [
+        {
+          "identifier": "table_border_color",
+          "type": "color",
+          "description": "table_border_color_description",
+          "label": "table_border_color_label",
+          "value": "#ddd"
+        },
+        {
+          "identifier": "table_font_color",
+          "type": "color",
+          "description": "table_font_color_description",
+          "label": "table_font_color_label",
+          "value": "#333333"
+        }
+      ]
+    },
+    {
+      "label": "admonition_group",
+      "variables": [
+        {
+          "identifier": "note_background_color",
+          "type": "color",
+          "description": "admonition_block_bg_color_description",
+          "label": "note_block_bg_color_label",
+          "value": "rgba(0, 128, 0, 0.16)"
+        },
+        {
+          "identifier": "note_block_font_icon",
+          "type": "text",
+          "description": "font_icon_description",
+          "label": "note_font_icon_label",
+          "value": "'\\f303'"
+        },
+        {
+          "identifier": "note_font_icon_color",
+          "type": "color",
+          "description": "font_color_description",
+          "label": "note_font_color_label",
+          "value": "rgb(0, 128, 0)"
+        },
+        {
+          "identifier": "caution_background_color",
+          "type": "color",
+          "description": "admonition_block_bg_color_description",
+          "label": "caution_block_bg_color_label",
+          "value": "rgba(238, 235, 59, 0.16)"
+        },
+        {
+          "identifier": "caution_block_font_icon",
+          "type": "text",
+          "description": "font_icon_description",
+          "label": "caution_font_icon_label",
+          "value": "'\\f071'"
+        },
+        {
+          "identifier": "caution_font_icon_color",
+          "type": "color",
+          "description": "font_color_description",
+          "label": "caution_font_color_label",
+          "value": "rgb(255, 232, 26)"
+        },
+        {
+          "identifier": "warning_background_color",
+          "type": "color",
+          "description": "admonition_block_bg_color_description",
+          "label": "warning_block_bg_color_label",
+          "value": "rgba(255, 165, 0, 0.16)"
+        },
+        {
+          "identifier": "warning_block_font_icon",
+          "type": "text",
+          "description": "font_icon_description",
+          "label": "warning_font_icon_label",
+          "value": "'\\f071'"
+        },
+        {
+          "identifier": "warning_font_icon_color",
+          "type": "color",
+          "description": "font_color_description",
+          "label": "warning_font_color_label",
+          "value": "rgb(255, 165, 0)"
+        },
+        {
+          "identifier": "danger_background_color",
+          "type": "color",
+          "description": "admonition_block_bg_color_description",
+          "label": "danger_block_bg_color_label",
+          "value": "rgba(255, 0, 0, 0.16)"
+        },
+        {
+          "identifier": "danger_block_font_icon",
+          "type": "text",
+          "description": "font_icon_description",
+          "label": "danger_font_icon_label",
+          "value": "'\\f071'"
+        },
+        {
+          "identifier": "danger_font_icon_color",
+          "type": "color",
+          "description": "font_color_description",
+          "label": "danger_font_color_label",
+          "value": "rgb(255, 0, 0)"
+        },
+        {
+          "identifier": "tip_background_color",
+          "type": "color",
+          "description": "admonition_block_bg_color_description",
+          "label": "tip_block_bg_color_label",
+          "value": "rgba(78, 190, 228, 0.16)"
+        },
+        {
+          "identifier": "tip_block_font_icon",
+          "type": "text",
+          "description": "font_icon_description",
+          "label": "tip_font_icon_label",
+          "value": "'\\f0d0'"
+        },
+        {
+          "identifier": "tip_font_icon_color",
+          "type": "color",
+          "description": "font_color_description",
+          "label": "tip_font_color_label",
+          "value": "rgb(78, 190, 228)"
+        },
+        {
+          "identifier": "important_background_color",
+          "type": "color",
+          "description": "admonition_block_bg_color_description",
+          "label": "important_block_bg_color_label",
+          "value": "rgba(0, 128, 0, 0.16)"
+        },
+        {
+          "identifier": "important_block_font_icon",
+          "type": "text",
+          "description": "font_icon_description",
+          "label": "important_font_icon_label",
+          "value": "'\\f06a'"
+        },
+        {
+          "identifier": "important_font_icon_color",
+          "type": "color",
+          "description": "font_color_description",
+          "label": "important_font_color_label",
+          "value": "rgb(0, 128, 0)"
+        },
+        {
+          "identifier": "notice_background_color",
+          "type": "color",
+          "description": "admonition_block_bg_color_description",
+          "label": "notice_block_bg_color_label",
+          "value": "rgba(78, 190, 228, 0.16)"
+        },
+        {
+          "identifier": "notice_block_font_icon",
+          "type": "text",
+          "description": "font_icon_description",
+          "label": "notice_font_icon_label",
+          "value": "'\\f05a'"
+        },
+        {
+          "identifier": "notice_font_icon_color",
+          "type": "color",
+          "description": "font_color_description",
+          "label": "notice_font_color_label",
+          "value": "rgb(78, 190, 228)"
+        }
+      ]
+    },
+    {
+      "label": "follow_button_group",
+      "variables": [
+        {
+          "identifier": "show_follow_section",
+          "type": "checkbox",
+          "description": "follow_section_description",
+          "label": "follow_section_label",
+          "value": true
+        },
+        {
+          "identifier": "show_follow_article",
+          "type": "checkbox",
+          "description": "follow_article_description",
+          "label": "follow_article_label",
+          "value": true
+        },
+        {
+          "identifier": "show_follow_topic",
+          "type": "checkbox",
+          "description": "follow_topic_description",
+          "label": "follow_topic_label",
+          "value": true
+        },
+        {
+          "identifier": "show_follow_post",
+          "type": "checkbox",
+          "description": "follow_post_description",
+          "label": "follow_post_label",
+          "value": true
+        },
+        {
+          "identifier": "follow_border_color",
+          "type": "color",
+          "description": "follow_border_color_description",
+          "label": "follow_border_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "follow_basic_color",
+          "type": "color",
+          "description": "follow_basic_color_description",
+          "label": "follow_basic_color_label",
+          "value": "#fff"
+        },
+        {
+          "identifier": "follow_text_color",
+          "type": "color",
+          "description": "follow_text_color_description",
+          "label": "follow_text_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "follow_hover_color",
+          "type": "color",
+          "description": "follow_hover_color_description",
+          "label": "follow_hover_color_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "follow_text_hover_color",
+          "type": "color",
+          "description": "follow_text_hover_color_description",
+          "label": "follow_text_hover_label",
+          "value": "#FFFFFF"
+        },
+        {
+          "identifier": "follow_active_color",
+          "type": "color",
+          "description": "follow_active_color_description",
+          "label": "follow_active_label",
+          "value": "#09717f"
+        },
+        {
+          "identifier": "follow_text_active_color",
+          "type": "color",
+          "description": "follow_text_active_color_description",
+          "label": "follow_text_active_label",
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    {
+      "label": "footer_group_label",
+      "variables": [
+        {
+          "identifier": "minimal_footer",
+          "type": "checkbox",
+          "description": "minimal_footer_description",
+          "label": "minimal_footer_label",
+          "value": true
+        },
+        {
+          "identifier": "footer_background_color",
+          "type": "color",
+          "description": "footer_background_color_description",
+          "label": "footer_background_color_label",
+          "value": "#F2F2F2"
+        },
+        {
+          "identifier": "footer_text_color",
+          "type": "color",
+          "description": "footer_text_color_description",
+          "label": "footer_text_color_label",
+          "value": "#333333"
+        }
+      ]
+    },
+    {
+      "label": "footer_first_col_group_label",
+      "variables": [
+        {
+          "identifier": "footerblock_first_visibility",
+          "type": "checkbox",
+          "description": "footerblock_visibility_description",
+          "label": "footerblock_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "footerblock_first_title",
+          "type": "text",
+          "description": "footerblock_title_description",
+          "label": "block_title_label",
+          "value": "Product"
+        },
+        {
+          "identifier": "footerblock_first_title_dc",
+          "type": "text",
+          "description": "footerblock_dc_description",
+          "label": "footerblock_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "foo_blockfirst_links_html_dc",
+          "type": "text",
+          "description": "foo_blockfirst_links_html_dc_des",
+          "label": "foo_blockfirst_link_html_dc_label",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "footer_second_col_group_label",
+      "variables": [
+        {
+          "identifier": "footerblock_second_visibility",
+          "type": "checkbox",
+          "description": "footerblock_visibility_description",
+          "label": "footerblock_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "footerblock_second_title",
+          "type": "text",
+          "description": "footerblock_title_description",
+          "label": "block_title_label",
+          "value": "About"
+        },
+        {
+          "identifier": "footerblock_second_title_dc",
+          "type": "text",
+          "description": "footerblock_dc_description",
+          "label": "footerblock_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "foo_blocksecond_links_html_dc",
+          "type": "text",
+          "description": "foo_blocksecond_links_html_dc_des",
+          "label": "foo_blocksecond_link_html_dc_label",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "footer_third_col_group_label",
+      "variables": [
+        {
+          "identifier": "footerblock_third_visibility",
+          "type": "checkbox",
+          "description": "footerblock_visibility_description",
+          "label": "footerblock_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "footerblock_third_title",
+          "type": "text",
+          "description": "footerblock_title_description",
+          "label": "block_title_label",
+          "value": "Community"
+        },
+        {
+          "identifier": "footerblock_third_title_dc",
+          "type": "text",
+          "description": "footerblock_dc_description",
+          "label": "footerblock_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "foo_blockthird_links_html_dc",
+          "type": "text",
+          "description": "foo_blockthird_links_html_dc_des",
+          "label": "foo_blockthird_link_html_dc_label",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "footer_fourth_col_group_label",
+      "variables": [
+        {
+          "identifier": "footerblock_fourth_visibility",
+          "type": "checkbox",
+          "description": "footerblock_visibility_description",
+          "label": "footerblock_visibility_label",
+          "value": true
+        },
+        {
+          "identifier": "footerblock_fourth_title",
+          "type": "text",
+          "description": "footerblock_title_description",
+          "label": "block_title_label",
+          "value": "Help"
+        },
+        {
+          "identifier": "footerblock_fourth_title_dc",
+          "type": "text",
+          "description": "footerblock_dc_description",
+          "label": "footerblock_title_dc_label",
+          "value": "NONE"
+        },
+        {
+          "identifier": "foo_blockfourth_links_html_dc",
+          "type": "text",
+          "description": "foo_blockfourth_links_html_dc_des",
+          "label": "foo_blockfourth_link_html_dc_label",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "footer_bottom_group_label",
+      "variables": [
+        {
+          "identifier": "copyright_text_html_dc",
+          "type": "text",
+          "description": "copyright_dc_description",
+          "label": "copyright_text_dc_label",
+          "value": "NONE"
+        }
+      ]
+    },
+    {
+      "label": "social_share_group",
+      "variables": [
+        {
+          "identifier": "twitter_link",
+          "type": "text",
+          "description": "twitter_link_description",
+          "label": "twitter_link_label",
+          "value": "https://x.com/i/flow/login?redirect_after_login=%2Famperity"
+        },
+        {
+          "identifier": "facebook_link",
+          "type": "text",
+          "description": "facebook_link_description",
+          "label": "facebook_link_label",
+          "value": "https://www.facebook.com/goamperity"
+        },
+        {
+          "identifier": "youtube_link",
+          "type": "text",
+          "description": "youtube_link_description",
+          "label": "youtube_link_label",
+          "value": "https://www.youtube.com/amperity"
+        },
+        {
+          "identifier": "linkedin_link",
+          "type": "text",
+          "description": "linkedin_link_description",
+          "label": "linkedin_link_label",
+          "value": "https://www.linkedin.com/company/amperity/"
+        },
+        {
+          "identifier": "instagram_link",
+          "type": "text",
+          "description": "instagram_link_description",
+          "label": "instagram_link_label",
+          "value": "https://www.instagram.com/amperity/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+<script>
+  var templateName = "articles";
+</script>
+<div class="container section">
+  <div class="article-container" id="article-container">
+    <div
+      class="article-side-main-block {{#is settings.catgsec_sidebar_visibility false}}article-fluid{{/is}} {{#is settings.show_articles_in_section false}}full-row{{/is}}">
+    
+      <article class="article">
+        <header class="article-header {{#is settings.author_meta_details_visibility false}}meta-hidden{{/is}}">
+          {{!-- Article Title --}}
+          <h1 title="{{article.title}}" class="article-title">
+            <span>{{article.title}}
+              {{#if article.internal}}
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 16 16"
+                class="icon-lock" title="{{t 'internal'}}">
+                <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1" />
+                <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5" />
+              </svg>
+              {{/if}}
+            </span>
+          </h1>
+
+          {{!-- Article Author and date/time stamp --}}
+          <div class="block-wrapper">
+            {{#if settings.author_meta_details_visibility}}
+            <div class="article-author">
+              <div class="article-meta">
+                {{#link 'user_profile' id=article.author.id}} {{article.author.name}},&#20;  {{/link}}
+                <div class="meta-group">
+                  {{#is article.created_at article.edited_at}}
+                  <span class="meta-data"> {{date article.created_at timeago=true}}</span>
+                  {{else}}
+                  <span class="meta-data"> {{date article.edited_at timeago=true}}</span>
+                  <span class="meta-data"> {{t 'updated'}}</span>
+                  {{/is}}
+                </div>
+              </div>
+            </div>
+            {{/if}}
+          </div>
+        </header>
+
+        <section class="article-info">
+          <div class="article-content">
+            
+            <div class="article-body">{{article.body}}</div>
+
+            {{#if (compare article.content_tags.length ">" 0)}}
+            <section class="content-tags">
+              <p>{{t 'content_tags_label'}}</p>
+              <ul class="content-tag-list">
+                {{#each article.content_tags}}
+                <li class="content-tag-item" data-content-tag-id="{{id}}">
+                  {{#link "search_result" content_tag_id=id target="_blank"}}
+                  {{name}}
+                  {{/link}}
+                </li>
+                {{/each}}
+              </ul>
+            </section>
+            {{/if}}
+
+            {{#if attachments}}
+            <div class="article-attachments">
+              <ul class="attachments">
+                {{#each attachments}}
+                <li class="attachment-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16"
+                    class="attachment-icon">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                      d="M9.5 4v7.7c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V3C6.5 1.6 7.6.5 9 .5s2.5 1.1 2.5 2.5v9c0 1.9-1.6 3.5-3.5 3.5S4.5 13.9 4.5 12V4" />
+                  </svg>
+                  <a href="{{url}}" target="_blank" title="{{name}}">{{name}}</a>
+                  <div class="attachment-meta meta-group">
+                    <span class="attachment-meta-item meta-data">{{size}}</span>
+                    <a href="{{url}}" target="_blank" class="attachment-meta-item meta-data"
+                      title="{{t 'download'}}">{{t'download'}}</a>
+                  </div>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+            {{/if}}
+          </div>
+        </section>
+      </article>
+    </div>
+  </div>
+</div>

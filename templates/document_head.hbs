@@ -1,0 +1,98 @@
+<!--
+/*!
+* @preserve
+* Theme Name: Diziana Sagma Theme (3.4.22)
+* @Version: 3.4.22
+* Version: 3.4.22
+* Author: Diziana (Allies Interactive Services Private Limited)
+* Website: https://www.diziana.com
+* Corporate Website : https://www.alliesinteractive.com/
+* Support: support@diziana.com
+* Follow: https://www.twitter.com/dizianaEngage
+* Like: https://www.facebook.com/diziana.engage
+* Purchased From: https://www.diziana.com
+* @link https://www.diziana.com"
+* @license A valid license is required to legally use this software (theme/plugin). You can purchase from diziana.com.
+* @copyright: © 2024 Allies Interactive Services Private Limited. All Rights Reserved
+*/
+-->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+
+<script>
+  window["dzThemeSettings"] = {
+    kbTreeEnabled: {{settings.show_knowledge_base_tree}},
+     kbTreeAccordionEnabled: {{settings.kb_tree_in_accordion}},
+     hideSearchButton: {{settings.search_button_visibility}},
+     sectionArticleSidebar: {{settings.show_articles_in_section}},
+     searchPageSidebar: {{settings.hide_search_result_sidebar}},
+  };
+</script>
+<!--  start Canny script -->
+
+<script>!function(w,d,i,s){function l(){if(!d.getElementById(i)){var f=d.getElementsByTagName(s)[0],e=d.createElement(s);e.type="text/javascript",e.async=!0,e.src="https://canny.io/sdk.js",f.parentNode.insertBefore(e,f)}}if("function"!=typeof w.Canny){var c=function(){c.q.push(arguments)};c.q=[],w.Canny=c,"complete"===d.readyState?l():w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}}(window,document,"canny-jssdk","script");</script>
+
+
+<script>
+  Canny('initChangelog', {
+    appID: '5ee29bf80008207d5df5ceb5',
+
+    position: 'bottom',
+    align: 'right',
+  });
+</script>
+
+<!--  end Canny script -->
+
+ <script>
+  /**
+   * Icon for home category/section and topic blocks
+   *
+   * Upload icon (asset_ID.png) to assets for default Icon
+   * Replace ID with category/section ID and topic ID
+   *
+   * Once asset is uploaded, click on it so details is shown in right pane
+   * Copy the text written under script tag and paste it below
+   **/
+</script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.swiftype.search.js"></script>
+<link type="text/css" rel="stylesheet" href="search.css" media="all" />
+
+{{!-- Category Blocks icon --}}
+{{#is settings.category_block_html_icons_dc 'NONE'}}
+<script>
+ /* Your code should look like the below lines -
+   *  var assets360000004673 = "{{asset '360000004673.png'}}";
+   *  var assets360000004673 = "fas fa-pencil-alt";
+   **/
+
+  // Paste copied code here
+
+
+</script>
+{{else}}
+ {{dc settings.category_block_html_icons_dc}}
+{{/is}}
+
+
+
+{{!-- Community Tioic Block Icon --}}
+{{#is settings.topic_block_html_icons_dc 'NONE'}}
+<script>
+ /* Your code should look like the below lines -
+   *  var assets360000004673 = "{{asset '360000004673.png'}}";
+   *  var assets360000004673 = "fas fa-pencil-alt";
+   **/
+
+  // Paste copied code here
+
+
+</script>
+{{else}}
+ {{dc settings.topic_block_html_icons_dc}}
+{{/is}}
+

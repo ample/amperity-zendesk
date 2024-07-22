@@ -1,0 +1,134 @@
+<script>
+  var templateName = "community_post_list";
+</script>
+
+<div class="container-divider"></div>
+<div class="container section">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+    <div class="sub-nav-search-container">
+      {{search submit=true instant=true}}
+    </div>
+  </nav>
+
+  <header class="page-header community-header">
+    <span class="dropdown">
+      <span class="dropdown-toggle">
+        <button class="dropdown-toggle" aria-haspopup="true">
+          <h4 class="title">
+            {{t 'all_posts'}}
+          </h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12"
+            class="dropdown-chevron-icon">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5" />
+          </svg>
+        </button>
+      </span>
+      <span class="dropdown-menu" role="menu">
+        {{#link 'topics' role='menuitem'}}
+        {{t 'show_topics'}}
+        {{/link}}
+        {{#link 'posts' role='menuitem' selected='true'}}
+        {{t 'show_all_posts'}}
+        {{/link}}
+      </span>
+    </span>
+    <span class="post-to-community">
+      {{link 'new_post' class='button button-large'}}
+    </span>
+  </header>
+
+  <div class="topic-header">
+    <span class="topic-filters">
+      <span class="dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true">
+          {{current_filter.label}}
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12"
+            class="dropdown-chevron-icon">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"></path>
+          </svg>
+        </button>
+        <span class="dropdown-menu" role="menu">
+          {{#each filters}}
+          <a href="{{url}}" aria-selected="{{selected}}" role="menuitem" title="{{name}}">
+            {{name}}
+          </a>
+          {{/each}}
+        </span>
+      </span>
+      <span class="dropdown">
+        <button class="dropdown-toggle" aria-haspopup="true">
+          {{current_sorter.label}}
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12"
+            class="dropdown-chevron-icon">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5" />
+          </svg>
+        </button>
+        <span class="dropdown-menu" role="menu">
+          {{#each sorters}}
+          <a href="{{url}}" aria-selected="{{selected}}" role="menuitem" title="{{name}}">
+            {{name}}
+          </a>
+          {{/each}}
+        </span>
+      </span>
+    </span>
+  </div>
+
+  <div class="posts-list striped-list">
+    {{#if posts}}
+      <ul>
+        {{#each posts}}
+          <li>
+            <section role="region" aria-labelledby="title-{{id}}" class="striped-list-item {{#if featured}}post-featured{{/if}}">
+              <span class="striped-list-info">
+                <a href="{{url}}" id="title-{{id}}" class="striped-list-title">{{title}}</a>
+                <span class="post-overview-item">
+                  {{#if pinned}}
+                    <span class="status-label status-label-pinned">{{t 'pinned'}}</span>
+                  {{/if}}
+
+                  {{#if featured}}
+                    <span class="status-label status-label-featured">{{t 'featured'}}</span>
+                  {{/if}}
+
+                  {{#is status 'none'}}
+                  {{else}}
+                    <span class="status-label-{{status_dasherized}} status-label striped-list-status">{{status_name}}</span>
+                  {{/is}}
+                </span>
+                {{#if ../settings.author_meta_details_visibility}}
+                  <div class="meta-group">
+                    <span class="meta-data">{{author.name}}</span>
+                    {{#if editor}}
+                      <span class="meta-data">{{date edited_at timeago=true}}</span>
+                      <span class="meta-data">{{t 'edited'}}</span>
+                    {{else}}
+                      <span class="meta-data">{{date created_at timeago=true}}</span>
+                    {{/if}}
+                  </div>
+                {{/if}}
+              </span>
+
+              <div class="post-overview-count striped-list-count">
+                <span class="striped-list-count-item">
+                  <span class="striped-list-number">{{vote_sum}}</span>
+                  {{t 'vote' count=vote_sum}}
+                </span>
+                <span class="striped-list-count-item">
+                  <span class="striped-list-number">{{comment_count}}</span>
+                  {{t 'comment' count=comment_count}}
+                </span>
+              </div>
+            </section>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <div class="no-posts-with-filter">{{t 'no_posts_with_filter'}}</div>
+    {{/if}}
+  </div>
+
+  {{pagination}}
+
+</div>
